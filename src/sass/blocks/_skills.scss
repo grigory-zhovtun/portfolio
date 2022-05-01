@@ -1,0 +1,62 @@
+.skills {
+    min-height: 800px;
+    background-color: var(--dark-color);
+
+    &__wrapper {
+        margin-top: 96px;
+        display: grid;
+        grid-template-columns: repeat(5, 95px);
+        grid-auto-rows: 95px;
+        gap: 70px;
+        justify-content: center;
+        
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+
+        &-descr {
+            margin-top: 11px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FFCCD8;
+        }
+    }
+}
+
+.block {
+    &__left-skills {
+        right: 212px;
+        top: -96px;
+        transform: rotate(-70.66deg);
+    }
+    &__top-skills {
+        right: 183px;
+        bottom: 350px;
+        transform: rotate(50.78deg);
+    }
+    &__rtop-skills {
+        left: 41%;
+        bottom: 270px;
+        transform: rotate(-25.78deg);
+    }
+    &__right-skills {
+        left: 16%;
+        bottom: -51px;
+        transform: rotate(-40.78deg);
+    }
+    &__bottom-skills {
+        right: 30%;
+        bottom: 183px;
+        transform: rotate(100.78deg);
+    }
+    &__center-skills {
+        bottom: 300px;
+        left: 15%;
+        transform: rotate(80.78deg);
+    } 
+}

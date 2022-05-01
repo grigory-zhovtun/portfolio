@@ -1,0 +1,153 @@
+@media (max-width: 1439px) {
+
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .promo {
+        &__menu {
+            div {
+                margin-left: 50px;
+            }
+        }
+        &__title {
+            font-size: 60px;
+        }
+        &__wrapper {
+            top: 280px;
+            left: 50px;
+        }
+    }
+
+    .portfolio {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 150px);
+            justify-content: space-around;
+            row-gap: 70px;
+            margin-top: 25px;
+        }
+    }
+
+    .skills {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 95px);
+            justify-content: space-around;
+            margin-top: 25px;
+        }
+    }
+
+    .contacts {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, 200px);  
+            justify-content: space-around;
+        }
+    }
+
+    .block {
+       display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .promo {
+        &__menu {
+            div {
+                margin-left: 30px;
+            }
+            a {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .about {
+        &__item {
+            &-study {
+                right: 174px;
+            }
+        }
+    }
+
+    .contacts {
+        &__wrapper {
+            grid-template-columns: 1fr;
+            padding-top: 20px;
+            justify-content: center;
+            
+        }
+        &__social {
+            margin: 0 auto;
+        }
+        &__logo {
+            display: none;
+        }
+        &__form {
+            margin-top: 15px;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .about {
+        &__item {
+            &-study {
+                right: 86px;
+            }
+            &-job {
+                right: 2%;
+            }
+            &-family {
+                left: -3%;
+            }
+        }
+    }
+
+    .skills {
+        &__item {
+            justify-content: center;
+            &-descr {
+                margin-top: 5px;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 0 10px; 
+    }
+    .promo {
+        &__menu {
+            flex-direction: column;
+            div {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .about {
+        &__wrapper {
+            position: static;
+            grid-template-columns: repeat(auto-fit, 95px);
+            justify-content: space-around;
+        }
+        &__item {
+            position: static;
+            margin-top: 20px;
+        }
+        &__circle {
+            display: none;
+        }
+    }
+}

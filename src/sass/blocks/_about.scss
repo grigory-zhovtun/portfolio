@@ -1,0 +1,102 @@
+.about {
+    min-height: 600px;
+    background-color: var(--light-color);
+    display: flex;
+    justify-content: center;
+   
+
+    &__wrapper {
+        position: relative;
+    }
+
+    &__item {
+        position: absolute;
+        text-align: center;
+
+        &-descr {
+            margin-top: 11px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 15px;
+            color: #3A131D;
+        }
+
+        &-college {
+            left: 45%;
+            top: -80px;
+        }
+
+        &-job {
+            right: 18%;
+            top: 50px;
+        }
+
+        &-study {
+            right: 268px;
+            bottom: -29px;
+        }
+
+        &-projects {
+            right: 63%;
+            bottom: -29px;
+        }
+
+        &-family {
+            left: 14%;
+            top: 43px;
+        }
+    }
+
+
+    &__circle {
+        display: flex;
+        width: 403px;
+        height: 403px;
+        
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        box-sizing: border-box;
+        border-radius: 100%;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    &__subtitle {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        color: #3A131D;
+    }
+}
+
+.block {
+    &__left-about {
+        left: -1154px;
+        bottom: 89px;
+    }
+    &__top-about {
+        left: -1006px;
+        top: 50px;
+        transform: rotate(141.78deg);
+    }
+    &__rtop-about {
+        right: 537px;
+        top: 50px;
+        transform: rotate(39.63deg);
+    }
+    &__right-about {
+        right: 364px;
+        bottom: 114px;
+        transform: rotate(25.5deg);
+    }
+    &__bottom-about {
+        left: -814px;
+        bottom: 13px;
+        transform: rotate(0deg);
+    }
+    &__center-about {
+        left: -787px;
+        top: 233px;
+    }
+}

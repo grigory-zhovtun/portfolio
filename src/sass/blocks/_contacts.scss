@@ -1,0 +1,79 @@
+.contacts {
+    height: 600px;
+    background-color: var(--dark-color);
+
+    &__wrapper {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3, 1fr);
+        padding-top: 71px;
+    }
+
+    &__social {
+        margin-top: 101px;
+        display: flex;
+        margin-right: 110px;
+        justify-content: center;
+        &-github {
+            margin-left: 57px;
+        }
+    }
+
+    &__form {
+        display: grid;
+    }
+
+    &__input {
+        width: 291px;
+        height: 45px;
+        background: #FFCCD8;
+        border-radius: 0px 15px 0px 0px;
+        margin-bottom: 30px;
+        input {
+            width: 97%;
+            height: 100%;
+            padding: 0 20px;
+            background-color: var(--light-color);
+        }
+    }  
+
+    &__textarea {
+        width: 291px;
+        height: 110px;
+        background: #FFCCD8;
+        border-radius: 0px 15px 0px 0px;
+        margin-bottom: 40px;
+        textarea {
+            width: 97%;
+            height: 100%;
+            resize: none;
+            padding: 20px;
+            background-color: var(--light-color);
+        }
+    }
+
+    &__btn {
+        margin-left: 97px;
+        border: none;
+        width: 200px;
+        height: 50px;        
+        border: 1px solid #FFCCD8;
+        background-color: var(--dark-color);
+        border-radius: 0px 15px 0px 0px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 15px;
+        color: #FFCCD8;
+    }
+
+    &__policy {
+        margin-top: 15px;
+        margin-left: 97px;
+        span {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+            color: #FFCCD8;
+        }
+    }
+}
