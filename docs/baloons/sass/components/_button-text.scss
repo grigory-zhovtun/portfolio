@@ -1,0 +1,24 @@
+.btn-text {
+
+    &:link,
+    &:visited {
+        font-weight: 700;
+        font-size: $fs-p;
+        letter-spacing: 0.2rem;
+        color: $color-gray;
+        text-decoration: none;
+        padding: 1rem;
+        border-bottom: 1px $color-brown-dark solid;
+        display: inline-block;
+    }
+
+    &:hover {
+        background-color: $color-brown-dark;
+        color: $color-white;
+        box-shadow: $box-shadow;
+        transform: translateY(-.2rem);
+    }
+    &:active {
+        transform: translateY(0rem);
+    }
+}

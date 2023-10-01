@@ -1,0 +1,36 @@
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+// tab-land 1240px max-width
+// tab-port 900px max-width
+// phone 600px max-width
+// big-screen min-width 1800px
+
+html {
+    font-size: 62.5%;
+    @include respond(tab-land){
+        font-size: 56.25%;
+    }
+    @include respond(tab-port){
+        font-size: 50%;
+    }
+    @include respond(phone){
+        font-size: 30%;
+    }
+    @include respond(big-screen){
+        font-size: 75%;
+    }
+}
+
+body {
+    padding: 5rem;
+    background-color: $color-white;
+}
+
+.container {
+    background-color: #F7F7F7 ;
+    position: relative;
+    z-index: 0;
+}
